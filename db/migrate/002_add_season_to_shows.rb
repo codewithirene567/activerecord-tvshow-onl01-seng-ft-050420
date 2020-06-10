@@ -1,2 +1,4 @@
-add_column
-t.string :season
+class AddSeason < ActiveRecord::Migration
+def change
+  add_column :season, :string
+end
