@@ -25,7 +25,6 @@ class Show < ActiveRecord::Base
   end
 
   def Show.shows_by_alphabetical_order
-    shows = Show.order(names: :asc)
-    shows
+    shows = Show.order(names: :asc).all
   end
 end
